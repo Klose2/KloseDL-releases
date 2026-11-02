@@ -66,12 +66,4 @@ https://afdian.com/a/KloseDL
   （会联网的地方只有：检查更新、拉软件图标、远程笔记仓库——都是你自己触发的）
 - 随包工具的许可证见各自项目主页（aria2-next / N_m3u8DL-RE / FFmpeg / yt-dlp）
 
-<details>
-<summary>技术细节（给好奇的人）</summary>
 
-- Electron 45 + TypeScript，主进程 `main/`、界面 `renderer/`、可单测的纯函数在 `shared/`
-- 分片调度在 `main/m3u8-*`，传输统一走 aria2 常驻（不自研分块）
-- 日志三处统一脱敏（`main/log-redact.ts` 是唯一出口），界面只转发「动作与异常」
-- 每个修复都在 `docs/adr/` 里有一张决策卡，踩过的坑在 `docs/lessons/`
-
-</details>
