@@ -57,7 +57,7 @@ Windows 上的下载器：直链批量、m3u8 双引擎，顺带一个 Markdown 
 
 https://afdian.com/a/KloseDL
 
-不给也完全没关系，功能一个都不会少。
+
 
 ## 说明
 
