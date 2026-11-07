@@ -49,7 +49,7 @@ Windows 上的下载器：直链批量、m3u8 双引擎，顺带一个 Markdown 
 | HLS：BYTERANGE / 主清单带独立音轨 | ✅ | 交给 N_m3u8DL-RE |
 | DRM（SAMPLE-AES / CENC） | ⚠️ | 只有工具路径，且工具要能拿到 key；拿不到就是链接本身受保护 |
 | 网页里的直链 / 播放页 | ✅ | 浏览器扩展嗅探后推送到应用 |
-| **BitTorrent / 磁力链接** | ❌ | 传输层只保留 aria2 直链，BT 已从本项目移除 |
+| **BitTorrent / 磁力链接** | ⚠️ | 实验性功能，没什么特色不稳定不够猛 |
 | **FTP / FTPS** | ❌ | aria2-next 不提供 FTP；命中 `ftp://` 会直接报「不支持 FTP，请改用 HTTP(S) 或 SFTP」，不是静默失败 |
 | **直播流**（清单无 `#EXT-X-ENDLIST`） | ❌ | 起跑前直接拒绝，避免拉到半夜才发现没有结尾。录直播请用 ffmpeg / yt-dlp / Streamlink |
 | **Cloudflare 挑战后的直链** | ❌ | 服务端回 403，外部工具同样拿不到，只能手动下载 |
